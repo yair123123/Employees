@@ -26,17 +26,17 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             TextBox textBox_id;
             button_prev = new Button();
             button_next = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
+            button_search_tz = new Button();
+            button_search_id = new Button();
+            button_delete = new Button();
+            button_update = new Button();
+            button_confirm = new Button();
+            button_new = new Button();
             textBox_last = new TextBox();
             textBox_first = new TextBox();
             textBox_tz = new TextBox();
@@ -58,18 +58,18 @@
             label_id = new Label();
             dateTimePicker1 = new DateTimePicker();
             pictureBox1 = new PictureBox();
-            groupBox1 = new GroupBox();
+            groupBox_gender = new GroupBox();
             radioButton_famle = new RadioButton();
             radioButton_male = new RadioButton();
             radioButton_widower = new RadioButton();
             radioButton_divorcee = new RadioButton();
-            groupBox2 = new GroupBox();
+            groupBox_femily_status = new GroupBox();
             radioButton_married = new RadioButton();
             radioButton_Bachelor = new RadioButton();
             textBox_id = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
+            groupBox_gender.SuspendLayout();
+            groupBox_femily_status.SuspendLayout();
             SuspendLayout();
             // 
             // textBox_id
@@ -101,67 +101,66 @@
             button_next.Text = ">>>";
             button_next.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // button_search_tz
             // 
-            button3.BackColor = SystemColors.Control;
-            button3.Location = new Point(348, 541);
-            button3.Name = "button3";
-            button3.Size = new Size(181, 34);
-            button3.TabIndex = 2;
-            button3.Text = "חיפוש עובד לפי תעודת זהות";
-            button3.UseVisualStyleBackColor = false;
+            button_search_tz.BackColor = SystemColors.Control;
+            button_search_tz.Location = new Point(348, 541);
+            button_search_tz.Name = "button_search_tz";
+            button_search_tz.Size = new Size(181, 34);
+            button_search_tz.TabIndex = 2;
+            button_search_tz.Text = "חיפוש עובד לפי תעודת זהות";
+            button_search_tz.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // button_search_id
             // 
-            button4.BackColor = SystemColors.Control;
-            button4.Location = new Point(557, 541);
-            button4.Name = "button4";
-            button4.Size = new Size(184, 34);
-            button4.TabIndex = 3;
-            button4.Text = "חיפוש עובד לפי קוד";
-            button4.UseVisualStyleBackColor = false;
+            button_search_id.BackColor = SystemColors.Control;
+            button_search_id.Location = new Point(557, 541);
+            button_search_id.Name = "button_search_id";
+            button_search_id.Size = new Size(184, 34);
+            button_search_id.TabIndex = 3;
+            button_search_id.Text = "חיפוש עובד לפי קוד";
+            button_search_id.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // button_delete
             // 
-            button5.BackColor = SystemColors.Control;
-            button5.Location = new Point(104, 477);
-            button5.Name = "button5";
-            button5.Size = new Size(88, 35);
-            button5.TabIndex = 4;
-            button5.Text = "מחיקה";
-            button5.UseVisualStyleBackColor = false;
+            button_delete.BackColor = SystemColors.Control;
+            button_delete.Location = new Point(104, 477);
+            button_delete.Name = "button_delete";
+            button_delete.Size = new Size(88, 35);
+            button_delete.TabIndex = 4;
+            button_delete.Text = "מחיקה";
+            button_delete.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // button_update
             // 
-            button6.BackColor = SystemColors.Control;
-            button6.Location = new Point(281, 477);
-            button6.Name = "button6";
-            button6.Size = new Size(93, 35);
-            button6.TabIndex = 5;
-            button6.Text = "עדכון";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
+            button_update.BackColor = SystemColors.Control;
+            button_update.Location = new Point(281, 477);
+            button_update.Name = "button_update";
+            button_update.Size = new Size(93, 35);
+            button_update.TabIndex = 5;
+            button_update.Text = "עדכון";
+            button_update.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // button_confirm
             // 
-            button7.BackColor = SystemColors.Control;
-            button7.Location = new Point(455, 477);
-            button7.Name = "button7";
-            button7.Size = new Size(87, 35);
-            button7.TabIndex = 6;
-            button7.Text = "הוספת עובד";
-            button7.UseVisualStyleBackColor = false;
+            button_confirm.BackColor = SystemColors.Control;
+            button_confirm.Location = new Point(455, 477);
+            button_confirm.Name = "button_confirm";
+            button_confirm.Size = new Size(87, 35);
+            button_confirm.TabIndex = 6;
+            button_confirm.Text = "הוספת עובד";
+            button_confirm.UseVisualStyleBackColor = false;
             // 
-            // button8
+            // button_new
             // 
-            button8.BackColor = SystemColors.Control;
-            button8.Location = new Point(596, 477);
-            button8.Name = "button8";
-            button8.Size = new Size(85, 35);
-            button8.TabIndex = 7;
-            button8.Text = "חדש";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += DeleteDetails;
+            button_new.BackColor = SystemColors.Control;
+            button_new.Location = new Point(596, 477);
+            button_new.Name = "button_new";
+            button_new.Size = new Size(85, 35);
+            button_new.TabIndex = 7;
+            button_new.Text = "חדש";
+            button_new.UseVisualStyleBackColor = false;
+            button_new.Click += DeleteDetails;
             // 
             // textBox_last
             // 
@@ -332,15 +331,15 @@
             pictureBox1.TabIndex = 29;
             pictureBox1.TabStop = false;
             // 
-            // groupBox1
+            // groupBox_gender
             // 
-            groupBox1.Controls.Add(radioButton_famle);
-            groupBox1.Controls.Add(radioButton_male);
-            groupBox1.Location = new Point(550, 158);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(156, 157);
-            groupBox1.TabIndex = 30;
-            groupBox1.TabStop = false;
+            groupBox_gender.Controls.Add(radioButton_famle);
+            groupBox_gender.Controls.Add(radioButton_male);
+            groupBox_gender.Location = new Point(550, 158);
+            groupBox_gender.Name = "groupBox_gender";
+            groupBox_gender.Size = new Size(156, 157);
+            groupBox_gender.TabIndex = 30;
+            groupBox_gender.TabStop = false;
             // 
             // radioButton_famle
             // 
@@ -352,7 +351,6 @@
             radioButton_famle.TabStop = true;
             radioButton_famle.Text = "נקבה";
             radioButton_famle.UseVisualStyleBackColor = true;
-            radioButton_famle.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // radioButton_male
             // 
@@ -386,19 +384,18 @@
             radioButton_divorcee.TabStop = true;
             radioButton_divorcee.Text = "גרוש";
             radioButton_divorcee.UseVisualStyleBackColor = true;
-            radioButton_divorcee.CheckedChanged += radioButton4_CheckedChanged;
             // 
-            // groupBox2
+            // groupBox_femily_status
             // 
-            groupBox2.Controls.Add(radioButton_divorcee);
-            groupBox2.Controls.Add(radioButton_widower);
-            groupBox2.Controls.Add(radioButton_married);
-            groupBox2.Controls.Add(radioButton_Bachelor);
-            groupBox2.Location = new Point(368, 108);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(163, 207);
-            groupBox2.TabIndex = 30;
-            groupBox2.TabStop = false;
+            groupBox_femily_status.Controls.Add(radioButton_divorcee);
+            groupBox_femily_status.Controls.Add(radioButton_widower);
+            groupBox_femily_status.Controls.Add(radioButton_married);
+            groupBox_femily_status.Controls.Add(radioButton_Bachelor);
+            groupBox_femily_status.Location = new Point(368, 108);
+            groupBox_femily_status.Name = "groupBox_femily_status";
+            groupBox_femily_status.Size = new Size(163, 207);
+            groupBox_femily_status.TabIndex = 30;
+            groupBox_femily_status.TabStop = false;
             // 
             // radioButton_married
             // 
@@ -428,8 +425,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(775, 600);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(groupBox_femily_status);
+            Controls.Add(groupBox_gender);
             Controls.Add(pictureBox1);
             Controls.Add(dateTimePicker1);
             Controls.Add(label_id);
@@ -452,22 +449,21 @@
             Controls.Add(textBox_first);
             Controls.Add(textBox_last);
             Controls.Add(textBox_id);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
+            Controls.Add(button_new);
+            Controls.Add(button_confirm);
+            Controls.Add(button_update);
+            Controls.Add(button_delete);
+            Controls.Add(button_search_id);
+            Controls.Add(button_search_tz);
             Controls.Add(button_next);
             Controls.Add(button_prev);
             Name = "EmployeeForm";
             Text = "EmployeeForm";
-            Load += EmployeeForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
+            groupBox_gender.ResumeLayout(false);
+            groupBox_gender.PerformLayout();
+            groupBox_femily_status.ResumeLayout(false);
+            groupBox_femily_status.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -476,19 +472,19 @@
 
         private Button button_prev;
         private Button button_next;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
+        private Button button_search_tz;
+        private Button button_search_id;
+        private Button button_delete;
+        private Button button_update;
+        private Button button_confirm;
+        private Button button_new;
         private TextBox textBox_id;
         private TextBox textBox_last;
         private TextBox textBox_first;
         private TextBox textBox_tz;
         private TextBox textBox_city;
         private TextBox textBox_num;
-        private TextBox textBoxstreet;
+        public TextBox textBoxstreet;
         private TextBox textBox_phone;
         private TextBox textBox_selolar;
         private ComboBox comboBox1;
@@ -504,12 +500,12 @@
         private Label label_id;
         private DateTimePicker dateTimePicker1;
         private PictureBox pictureBox1;
-        private GroupBox groupBox1;
+        static public GroupBox groupBox_gender;
         private RadioButton radioButton_famle;
         private RadioButton radioButton_male;
         private RadioButton radioButton_widower;
         private RadioButton radioButton_divorcee;
-        private GroupBox groupBox2;
+        static public GroupBox groupBox_femily_status;
         private RadioButton radioButton_married;
         private RadioButton radioButton_Bachelor;
     }

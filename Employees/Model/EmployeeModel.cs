@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,13 +22,14 @@ namespace Employees.Model
 
     public class EmployeeModel
     {
-        public string Id { get; set; }
-        public string Tz { get; set; }
+        internal string tz;
+
+        public int Id { get; set; }
+        public int Tz { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public Gender Gender { get; set; }
-
-        public DateOnly Bod { get; set; }
+        public DateTime Bod { get; set; }
         public FamilyStatus Status { get; set; }
         public string CellPhone { get; set; }
         public string Phone { get; set; }
@@ -45,9 +47,23 @@ namespace Employees.Model
             {
             }
                 
-         } 
-        public EmployeeModel(string id,string tz, string firstname, string lastname,Gender gender ,DateOnly bod,FamilyStatus status, string sellolar, string phone, string street, string homeNum, string city) {
-            Id = id;
+        } 
+        public EmployeeModel
+            (
+            int tz,
+            string firstname,
+            string lastname,
+            Gender gender 
+            ,DateTime bod,
+            FamilyStatus status,
+            string sellolar,
+            string phone,
+            string street,
+            string homeNum,
+            string city
+            )
+        {
+            Id = 0;
             Tz = tz; 
             FirstName = firstname;
             LastName = lastname;
